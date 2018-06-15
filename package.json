@@ -1,0 +1,39 @@
+{
+  "name": "devfolio-project-starter",
+  "version": "1.0.0",
+  "description": "Devfolio Project Starter",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devfolioco/starter.git"
+  },
+  "author": "Devfolio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devfolioco/starter/issues"
+  },
+  "homepage": "https://github.com/devfolioco/starter#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.7",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
