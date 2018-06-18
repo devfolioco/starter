@@ -1,13 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
 import VisibleTodoList from '../containers/VisibleTodoList';
 
+const Container = styled.div`
+  background-color: lightgray;
+`;
+
 const App = () => (
-  <div>
+  <Container>
     <AddTodo />
     <VisibleTodoList />
     <Footer />
-  </div>
+  </Container>
 );
 export default App;
