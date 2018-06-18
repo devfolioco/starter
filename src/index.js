@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import todoApp from './reducers';
-import App from './components/App';
+import Routes from './routes';
 
 import 'normalize.css/normalize.css';
 
@@ -11,7 +11,7 @@ let store = createStore(todoApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window._
 
 render(
   <Provider store={store}>
-    <App />
+    <Routes />
   </Provider>,
   document.getElementById('app')
 );
