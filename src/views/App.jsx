@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 import Footer from '../components/Footer';
 import AddTodo from '../components/AddTodo';
@@ -11,6 +12,9 @@ const Container = styled.div`
 
 const App = () => (
   <Container>
+    <Helmet>
+      <title>Todos | Devfolio Starter</title>
+    </Helmet>
     <AddTodo />
     <TodoList />
     <Footer />
