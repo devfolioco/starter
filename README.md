@@ -14,7 +14,7 @@ cd <my-project-name>
 Install the project dependencies:
 
 ```
-yarn
+yarn install
 ```
 
 ## Usage
