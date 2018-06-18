@@ -20,10 +20,16 @@
   },
   "homepage": "https://github.com/devfolioco/starter#readme",
   "dependencies": {
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "react-loadable": "^5.4.0",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "styled-components": "^3.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
