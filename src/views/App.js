@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Footer from '../components/Footer';
 import AddTodo from '../components/AddTodo';
-import VisibleTodoList from '../components/VisibleTodoList';
+import TodoList from '../components/TodoList';
 
 const Container = styled.div`
   background-color: lightgray;
@@ -12,7 +12,7 @@ const Container = styled.div`
 const App = () => (
   <Container>
     <AddTodo />
-    <VisibleTodoList />
+    <TodoList />
     <Footer />
   </Container>
 );
