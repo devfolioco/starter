@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Footer from './Footer';
+import Footer from '../components/Footer';
 import AddTodo from '../containers/AddTodo';
 import VisibleTodoList from '../containers/VisibleTodoList';
 
