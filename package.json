@@ -21,6 +21,7 @@
   "homepage": "https://github.com/devfolioco/starter#readme",
   "dependencies": {
     "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
