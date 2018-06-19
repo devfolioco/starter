@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
-import Posts from './views/Posts';
-
 const Loading = () => <div>Loading...</div>;
 
 const NoMatch = () => (
@@ -19,6 +17,11 @@ const Home = Loadable({
 
 const App = Loadable({
   loader: () => import('./views/App'),
+  loading: Loading,
+});
+
+const Posts = Loadable({
+  loader: () => import('./views/Posts'),
   loading: Loading,
 });
 
