@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
+import Posts from './views/Posts';
+
 const Loading = () => <div>Loading...</div>;
 
 const NoMatch = () => (
@@ -31,6 +33,7 @@ const Routes = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/todos" component={App} />
+      <Route path="/posts" component={Posts} />
       <Route component={NoMatch} />
     </Switch>
   </Router>

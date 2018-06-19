@@ -6,8 +6,8 @@ const todos = (state = [], action) => {
         {
           id: action.id,
           text: action.text,
-          completed: false
-        }
+          completed: false,
+        },
       ];
     case 'TOGGLE_TODO':
       return state.map(
@@ -15,7 +15,7 @@ const todos = (state = [], action) => {
           todo.id === action.id
             ? {
                 ...todo,
-                completed: !todo.completed
+                completed: !todo.completed,
               }
             : todo
       );
