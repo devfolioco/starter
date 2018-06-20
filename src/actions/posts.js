@@ -1,14 +1,16 @@
+import { REQUEST_POSTS, REQUEST_POSTS_SUCCESS, REQUEST_POSTS_FAILURE } from '../constants/actions';
+
 const requestPosts = () => ({
-  type: 'REQUEST_POSTS',
+  type: REQUEST_POSTS,
 });
 
 const requestPostsSuccess = items => ({
-  type: 'REQUEST_POSTS_SUCCESS',
+  type: REQUEST_POSTS_SUCCESS,
   payload: items,
 });
 
 const requestPostsFailure = error => ({
-  type: 'REQUEST_POSTS_FAILURE',
+  type: REQUEST_POSTS_FAILURE,
   payload: error,
 });
 
