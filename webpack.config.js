@@ -4,7 +4,7 @@ const path = require('path');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: `${APP_DIR}/index.jsx`,
+  entry: ['babel-polyfill', `${APP_DIR}/index.jsx`],
   module: {
     rules: [
       {

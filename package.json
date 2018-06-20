@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/devfolioco/starter#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.4.1",

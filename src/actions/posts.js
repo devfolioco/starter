@@ -1,4 +1,5 @@
 import { REQUEST_POSTS, REQUEST_POSTS_SUCCESS, REQUEST_POSTS_FAILURE } from '../constants/actions';
+import API from '../api';
 
 const requestPosts = () => ({
   type: REQUEST_POSTS,
@@ -14,13 +15,12 @@ const requestPostsFailure = error => ({
   payload: error,
 });
 
-export const getPosts = () => dispatch => {
+export const getPosts = () => async dispatch => {
   dispatch(requestPosts());
-
-  fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(json => {
-      dispatch(requestPostsSuccess(json));
-    })
-    .catch(error => dispatch(requestPostsFailure(error)));
+  try {
+    const { data } = await API.fetchPosts();
+    dispatch(requestPostsSuccess(data));
+  } catch (error) {
+    dispatch(requestPostsFailure(error));
+  }
 };
