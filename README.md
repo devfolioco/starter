@@ -50,9 +50,13 @@ Complete list of scripts:
 
 ## Libraries / Tools
 
-- React-Redux
-- React-Router with react-loadable for code-splitting
+- React + Redux
+- React-Router 4
 - styled-components
 - react-helmet
+- redux-thunk middleware
+- axios for network requests
+- localStorage for persistance
 - Webpack 4 with Babel
+- webpack-dotenv for .env config
 - ESLint + Prettier for code formatting
