@@ -9,6 +9,7 @@ const Home = () => (
     </Helmet>
     <h2>Home</h2>
     <Link to="/todos">Todos App</Link> <br />
+    <Link to="/posts">Posts from API</Link> <br />
     <Link to="/about">About</Link>
   </div>
 );

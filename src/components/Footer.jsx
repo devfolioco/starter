@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from '../components/Link';
-import { VisibilityFilters } from '../actions';
+import { visibilityFilters } from '../constants';
 
 const Footer = () => (
   <p>
-    Show: <Link filter={VisibilityFilters.SHOW_ALL}>All</Link>
+    Show: <Link filter={visibilityFilters.SHOW_ALL}>All</Link>
     {', '}
-    <Link filter={VisibilityFilters.SHOW_ACTIVE}>Active</Link>
+    <Link filter={visibilityFilters.SHOW_ACTIVE}>Active</Link>
     {', '}
-    <Link filter={VisibilityFilters.SHOW_COMPLETED}>Completed</Link>
+    <Link filter={visibilityFilters.SHOW_COMPLETED}>Completed</Link>
   </p>
 );
 
