@@ -16,8 +16,8 @@ class Posts extends Component {
           <title>Posts | Devfolio Starter</title>
         </Helmet>
         <h2>Posts</h2>
-        <ul>{isLoading ? 'Loading...' : posts.map(post => <li>{post.title}</li>)}</ul>
-        {console.log(error)}
+        <ul>{isLoading ? 'Loading...' : posts.map(post => <li key={post.id}>{post.title}</li>)}</ul>
+        {error && console.log(error)}
       </div>
     );
   }
