@@ -60,3 +60,11 @@ Complete list of scripts:
 - Webpack 4 with Babel
 - webpack-dotenv for .env config
 - ESLint + Prettier for code formatting
+
+## Contributing
+
+Feel free to open issues and pull requests!
+
+## License
+
+MIT
